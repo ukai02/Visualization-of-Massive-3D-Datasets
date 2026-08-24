@@ -16,14 +16,15 @@ Processing large-scale 3D grid data presents heavy computational challenges. Thi
 ## Repository Structure
 
 ```text
-├── src.c                         # Main MPI C source code
+├── outputs/                      # Directory containing SLURM output logs for various process counts
+├── plot.py                       # Python script (seaborn/matplotlib) to generate performance boxplots
 ├── run_P32.sh                    # SLURM batch script for 32 processes
 ├── run_P48.sh                    # SLURM batch script for 48 processes
 ├── run_P64.sh                    # SLURM batch script for 64 processes
 ├── run_P96.sh                    # SLURM batch script for 96 processes
-├── plot.py                       # Python script (seaborn/matplotlib) to generate performance boxplots
-├── timing_data_optimized.csv     # Raw execution time data across different configurations
-└── outputs/                      # Directory containing SLURM output logs for various process counts
+├── src.c                         # Main MPI C source code
+└──  timing_data_optimized.csv     # Raw execution time data across different configurations
+
 ```
 
 ## Compilation & Execution
